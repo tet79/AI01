@@ -1,6 +1,9 @@
 // learnstock.cpp : コンソール アプリケーションのエントリ ポイントを定義します。
 //
-
+/*	単純な帰納的学習の例題プログラム
+	パターン学習器
+	１００個の学習データを読み込んで、適合する１０桁の2進数パターンを答えます
+*/
 #include "stdafx.h"
 #include <stdio.h>
 #include <stdlib.h>
@@ -25,6 +28,8 @@ int main()
 	int data[SETSIZE][CNO];	//　学習データセット
 	int teacher[SETSIZE];	//　教師データ
 	int bestscore = 0;		//　スコアの最良値
+
+
 	int bestanswer[CNO];	//　探索途中での最良解
 
 	srand(SEED);
